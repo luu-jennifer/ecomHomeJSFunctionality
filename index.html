@@ -7,13 +7,11 @@
 	<title>Toybox Homepage</title>
 	<!-- styles LINKED -->
 	<link rel="stylesheet" href="./styles/styles.css">
-	<!-- scripts LINKED -->
-	<!-- <script src="./scripts/app.js"></script> -->
 </head>
 <body>	
 	<nav class="navBar">
 		<div class="wrapper">
-			<button class="menuIcon">
+			<button class="menuIcon" id="menuButton">
 				<img src="./assets/menu-button.svg" alt="open slide-out navigation" class="menuIcon">
 			</button>
 			<a href="#" class="logo">
@@ -36,9 +34,9 @@
 
 	<!-- .wrapper END -->
 	
-	<div class="slideOutNav">
+	<div class="slideOutNav" id="slideOutNav">
 		<div class="buttonContainer">
-			<button>
+			<button id="menuClose">
 				<img src="./assets/menu-close.svg" alt="close navigation">
 			</button>
 		</div>
@@ -63,8 +61,6 @@
 			<h3>Go on, let them play with wooden blocks.</h3>
 			<p>Sed gravida eu ac aliquam pellentesque pharetra pharetra. Augue nam facilisis tristique turpis iaculis pulvinar
 				tellus.</p>
-				<p id="demo"></p>
-
 			<a class="button">Shop All</a>
 		</div>
 	</div>
@@ -189,19 +185,7 @@
 			</div> <!-- .footerFlexContainer END-->
 		</div> <!-- .wrapper END-->
 	</footer>
-
-	<script>
-		// document.getElementsByClassName("menuIcon").addEventListener("click", displayDate);
-
-		// 	function displayDate() {
-		// 		document.getElementById("demo").innerHTML = Date();
-		// 	}
-
-			document.getElementsByClassName("menuIcon").addEventListener("click", displayDate);
-
-				function displayDate() {
-					document.getElementById("demo").innerHTML = Date();
-				}
-	</script>
+	<!-- scripts LINKED -->
+	<script src="./scripts/app.js"></script>
 </body>
 </html>

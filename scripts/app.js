@@ -1,10 +1,10 @@
-const menuIcon = document.getElementsByClassName("menuIcon");
-// const slideOutNav = document.getElementsByClassName("slideOutNav");
+const menuButton = document.getElementById("menuButton");
+const slideOutNav = document.getElementById("slideOutNav");
+const menuClose = document.getElementById("menuClose");
+
+const showSlideOutNav = () => slideOutNav.style.left = "0px";
+const hideSlideOutNav = () => slideOutNav.style.left = "-506px";
 
 
-
-document.getElementsByClassName("menuIcon").addEventListener("click", displayDate);
-
-function displayDate() {
-  document.getElementById("demo").innerHTML = Date();
-}
+menuButton.addEventListener("click", showSlideOutNav);
+menuClose.addEventListener("click", hideSlideOutNav);
