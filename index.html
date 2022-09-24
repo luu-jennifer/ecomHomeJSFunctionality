@@ -7,25 +7,30 @@
 	<title>Toybox Homepage</title>
 	<link rel="stylesheet" href="./styles/styles.css">
 </head>
-<body>
-	<!-- .wrapper END -->
-	
-	<div class="slideOutNav">
-		<div class="buttonContainer">
-			<button>
-				<img src="./assets/menu-close.svg" alt="close navigation">
+<body>	
+	<nav class="navBar">
+		<div class="wrapper">
+			<button class="menuIcon">
+				<img src="./assets/menu-button.svg" alt="open slide-out navigation" class="menuIcon">
 			</button>
-		</div>
-		<nav>
-			<ul class="mainMenu">
-				<li><a href="#">Shop</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">FAQ</a></li>
-				<li><a href="#">News</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</nav>
-	</div>
+			<a href="#" class="logo">
+				<h1>Toybox</h1>
+			</a>
+			<div class="searchCart">
+				<button class="menuIcon">
+					<img src="./assets/search.svg" alt="search icon" class="searchIcon">
+				</button>
+	
+				<a href="#" class="bag">
+					<img src="./assets/shop-bag.svg" alt="shopping bag icon" class="bagIcon">
+				</a>
+				<div class="counter">
+					<p class="smallCopy">0</p>
+				</div> <!-- .counter END -->
+			</div> <!-- .searchCart END -->
+		</div> <!-- .wrapper END -->
+	</nav> <!-- .navBar END -->
+
 	<!-- .wrapper END -->
 	
 	<div class="slideOutNav">
