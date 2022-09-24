@@ -58,7 +58,7 @@
   flex-direction: column;
   position: fixed;
   top: 0;
-  left: -506px;
+  left: -506px; //Hides slide out Nav. onclick left: 0px
   z-index: 20;
   transition: 0.75s;
 
