@@ -506,6 +506,54 @@ a.button:focus {
   color: rgba(255, 255, 255, 0.5);
 }
 
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #084b6d;
+  display: grid;
+  place-items: center;
+  -webkit-transition: all 0.8s linear;
+  transition: all 0.8s linear;
+  visibility: hidden;
+  z-index: -10;
+}
+
+.openModal {
+  visibility: visible;
+  z-index: 10;
+}
+
+.modalContainer {
+  background-color: #ffd698;
+  border-radius: 10px;
+  width: 70vw;
+  height: 30vh;
+  max-width: 500px;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 40px;
+  border: transparent;
+  cursor: pointer;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+.closeBtn :hover,
+.closeBtn :focus {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
 header {
   background-color: #f8fbf3;
   margin-bottom: 90px;

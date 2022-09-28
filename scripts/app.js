@@ -1,3 +1,9 @@
+//function programming
+// app.init = () => {
+    // function for slide out
+
+    // function for modal
+// };
 //slide out menu
 const menuButton = document.getElementById("menuButton");
 const slideOutNav = document.getElementById("slideOutNav");
@@ -15,10 +21,18 @@ menuClose.addEventListener("click", hideSlideOutNav);
 
 // modal pop up subscribe to save when shop all is clicked
   //create variables for Shop All, modalOverlay, closeBtn
-
+  const shopAllBtn = document.querySelector("#shopAllBtn");
+  const modal = document.querySelector(".modalOverlay");
+  const closeBtn = document.querySelector(".closeBtn");
   // add click event listener for Shop All and closeBtn
+  // when user clicks on Shop All, show modalOverlay by adding class openModal
+  // when user clicks on closeBtn, remove class openModal
+  const openModal = () => modal.classList.add("openModal");
+  const closeModal = () => modal.classList.remove("openModal");
+  shopAllBtn.addEventListener("click", openModal);
+  closeBtn.addEventListener("click", closeModal);
 
-    // when user clicks on Shop All, show modalOverlay by adding class modalOverlay
 
 
-    // when user clicks on closeBtn, remove class modalOverlay
+// initiate app by calling function
+// app.init();

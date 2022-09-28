@@ -1,0 +1,49 @@
+@use "./variables" as *;
+
+//modal 
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $primary;
+  display: grid;
+  place-items: center;
+  transition: all 0.8s linear;
+  visibility: hidden;
+  z-index: -10;
+}
+
+// open and close modal class added in js
+.openModal {
+  visibility: visible;
+  z-index: 10;
+}
+
+.modalContainer {
+  background-color: $quinary;
+  border-radius: 10px;
+  width: 70vw;
+  height: 30vh;
+  max-width: 500px;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 40px;
+  border: transparent;
+  cursor: pointer;
+  transition: all 0.5s linear;
+  :hover,
+  :focus {
+    transform: scale(1.5);
+  }
+}
+
