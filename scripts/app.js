@@ -11,5 +11,14 @@ menuButton.addEventListener("click", showSlideOutNav);
 menuClose.addEventListener("click", hideSlideOutNav);
 
 // prompt email on page load
+// const email = prompt("Subscribe Now and Receive 10% OFF");
 
-const email = prompt("Subscribe Now and Receive 10% OFF");
+// modal pop up subscribe to save when shop all is clicked
+  //create variables for Shop All, modalOverlay, closeBtn
+
+  // add click event listener for Shop All and closeBtn
+
+    // when user clicks on Shop All, show modalOverlay by adding class modalOverlay
+
+
+    // when user clicks on closeBtn, remove class modalOverlay
